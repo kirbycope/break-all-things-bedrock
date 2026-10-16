@@ -1,0 +1,8 @@
+{
+	"resource_pack_name": "break_all_things",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"breakall_vein_pickaxe": { "textures": "textures/items/vein_pickaxe" },
+		"breakall_timber_axe": { "textures": "textures/items/timber_axe" }
+	}
+}

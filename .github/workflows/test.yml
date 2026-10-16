@@ -1,0 +1,32 @@
+name: Test
+
+# The pack's files and the vein and tree logic, on every push and pull request. No server is needed for either.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Logic tests
+        run: npm test
+
+      - name: Pack tests
+        run: |
+          pip install pytest pillow
+          python -m pytest tests -q

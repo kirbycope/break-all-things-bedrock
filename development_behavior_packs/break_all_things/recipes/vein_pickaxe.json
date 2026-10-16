@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": { "identifier": "breakall:vein_pickaxe" },
+		"tags": ["crafting_table"],
+		"pattern": ["RDR", "DPD", "RDR"],
+		"key": {
+			"R": { "item": "minecraft:redstone" },
+			"D": { "item": "minecraft:diamond" },
+			"P": { "item": "minecraft:diamond_pickaxe" }
+		},
+		"unlock": [{ "item": "minecraft:diamond_pickaxe" }],
+		"result": { "item": "breakall:vein_pickaxe" }
+	}
+}

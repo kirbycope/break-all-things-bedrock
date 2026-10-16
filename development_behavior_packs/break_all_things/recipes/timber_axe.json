@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": { "identifier": "breakall:timber_axe" },
+		"tags": ["crafting_table"],
+		"pattern": ["LIL", "IAI", "LIL"],
+		"key": {
+			"L": { "tag": "minecraft:logs" },
+			"I": { "item": "minecraft:iron_ingot" },
+			"A": { "item": "minecraft:diamond_axe" }
+		},
+		"unlock": [{ "item": "minecraft:diamond_axe" }],
+		"result": { "item": "breakall:timber_axe" }
+	}
+}

@@ -1,0 +1,10 @@
+behavior_packs/
+resource_packs/
+__pycache__/
+.pytest_cache/
+node_modules/
+/captures/
+/watchdog/
+
+# the add-on, built by tools/build_addon.py and published as a release asset
+/break-all-things-bedrock.mcaddon

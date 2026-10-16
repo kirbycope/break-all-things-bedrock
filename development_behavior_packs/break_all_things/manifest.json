@@ -1,0 +1,39 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Break All the Things!",
+		"description": "A pickaxe that mines a whole ore vein and an axe that fells a whole tree",
+		"uuid": "06e63d43-49b1-4fd2-939e-b11c36d5477e",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 26, 0]
+	},
+	"metadata": {
+		"authors": ["Kirbycope"]
+	},
+	"modules": [
+		{
+			"description": "Items and recipes",
+			"type": "data",
+			"uuid": "ad426081-a81c-4118-9365-5f1e0e9898f6",
+			"version": [1, 0, 0]
+		},
+		{
+			"description": "Vein mining and tree felling",
+			"type": "script",
+			"language": "javascript",
+			"uuid": "ae83528b-fa20-45aa-bf6f-fd9d6497dddc",
+			"version": [1, 0, 0],
+			"entry": "scripts/main.js"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1f61bc83-37bd-462b-a58a-6c0341910771",
+			"version": [1, 0, 0]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.6.0"
+		}
+	]
+}
