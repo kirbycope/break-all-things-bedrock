@@ -9,11 +9,11 @@ The item textures are drawn by `tools/make_textures.py` and are this repository'
 ## The thumbnail
 
 `assets/thumbnail.png` (1920x1080, for YouTube and Planet Minecraft) and the 960x540 `break-all-things-bedrock.png`
-are built by [tools/make_thumbnail.py](tools/make_thumbnail.py). The title is set in **Passion One** (Black), by
-**Dario Manuel Muhafara**, under the SIL Open Font License 1.1
-([Google Fonts](https://fonts.google.com/specimen/Passion+One)), in
-[tools/fonts/PassionOne-Black.ttf](tools/fonts/PassionOne-Black.ttf). The font is used only for the thumbnail and is
-not in the `.mcaddon`. `assets/background.png` and `assets/vein.png` are frames from the trailer, and
+are built by [tools/make_thumbnail.py](tools/make_thumbnail.py). The title is set in **Bangers**, by **Vernon Adams**
+(The Bangers Project Authors), under the SIL Open Font License 1.1
+([Google Fonts](https://fonts.google.com/specimen/Bangers)), in
+[tools/fonts/Bangers-Regular.ttf](tools/fonts/Bangers-Regular.ttf) with its licence beside it. The font is used only
+for the thumbnail and is not in the `.mcaddon`. `assets/background.png` and `assets/vein.png` are frames from the trailer, and
 `assets/skin.png` is the author's player skin.
 
 `tools/make_thumbnail.py`, `tools/skin_render.py`, `tools/make_preview.py` and `tools/tinyify.py` come from

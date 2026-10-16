@@ -1,7 +1,7 @@
 """Build the 1920x1080 thumbnail for YouTube and Planet Minecraft, and the 960x540 repository preview.
 
 Everything it needs is committed: the birch glade from the trailer in assets/background.png, the diamond vein
-breaking in assets/vein.png, the player skin in assets/skin.png, the Timber Axe texture and Passion One in tools/fonts/.
+breaking in assets/vein.png, the player skin in assets/skin.png, the Timber Axe texture and Bangers in tools/fonts/.
 
     python tools/make_thumbnail.py
     python tools/make_thumbnail.py --no-preview
@@ -22,20 +22,21 @@ import skin_render
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-FONT = os.path.join(HERE, "fonts", "PassionOne-Black.ttf")
+FONT = os.path.join(HERE, "fonts", "Bangers-Regular.ttf")
 
 W, H = 1920, 1080
 
 STYLES = {
-    "white":   dict(top=(255, 255, 255), bot=(180, 184, 188), side=(138, 142, 146)),
-    # the Vein Pickaxe's diamond, against the glade's greens and blues
-    "diamond": dict(top=(168, 255, 244), bot=(32, 197, 181), side=(10, 92, 84)),
+    "white":  dict(top=(255, 255, 255), bot=(196, 200, 206), side=(120, 124, 132)),
+    # the meme's own colours: the yellow burst and the hot pink shirt
+    "burst":  dict(top=(255, 250, 120), bot=(255, 206, 0), side=(178, 112, 0)),
+    "pink":   dict(top=(255, 120, 206), bot=(232, 0, 132), side=(122, 0, 68)),
 }
 
 TITLE = [
-    dict(text="BREAK ALL", style="diamond", cap=150, arc=7),
-    dict(text="THE THINGS!", style="diamond", cap=150, arc=7),
-    dict(text="BEDROCK", style="white", cap=98, arc=-10),
+    dict(text="BREAK ALL", style="burst", cap=168, arc=7),
+    dict(text="THE THINGS!", style="pink", cap=168, arc=7),
+    dict(text="BEDROCK", style="white", cap=104, arc=-10),
 ]
 
 AXE = os.path.join(ROOT, "development_resource_packs", "break_all_things", "textures", "items", "timber_axe.png")
