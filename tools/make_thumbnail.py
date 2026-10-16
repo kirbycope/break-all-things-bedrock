@@ -242,7 +242,8 @@ def build():
     a = np.asarray(char.split()[3])
     ys, xs = np.nonzero(a > 0)
     hand = (char_pos[0] + int(xs.max()), char_pos[1] + int(ys[xs == xs.max()].mean()))
-    axe = Image.open(AXE).convert("RGBA").resize((360, 360), Image.NEAREST)
+    # reflected across the handle, so the handle stays bottom left to top right and the blade faces forward
+    axe = Image.open(AXE).convert("RGBA").transpose(Image.Transpose.TRANSVERSE).resize((360, 360), Image.NEAREST)
     axe = _card_outline(axe, 11)
     canvas.alpha_composite(axe, (hand[0] + AXE_AT[0], hand[1] - axe.height + AXE_AT[1]))
 
