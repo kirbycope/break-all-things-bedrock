@@ -68,8 +68,10 @@ and `main.js` listens for a block broken with either tool and does the breaking.
 npm test                          # the vein, tree and leaf logic, under Node against a pretend world
 python -m pytest tests            # the pack files: manifests, items, recipes, textures, names, the built add-on
 python tools/build_addon.py       # writes break-all-things-bedrock.mcaddon
-python tools/make_textures.py     # redraws both item textures and the pack icon
+python tools/make_textures.py     # redraws both item textures
 ```
+
+The pack icon and its credit are listed in [CREDITS.md](CREDITS.md).
 
 Pushing a `v*` tag builds the `.mcaddon` and publishes it as a release (`.github/workflows/release.yml`).
 
