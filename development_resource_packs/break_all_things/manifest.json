@@ -4,7 +4,7 @@
 		"name": "Break All the Things!",
 		"description": "Textures and names for the Vein Pickaxe and the Timber Axe",
 		"uuid": "1f61bc83-37bd-462b-a58a-6c0341910771",
-		"version": [1, 0, 0],
+		"version": [1, 0, 1],
 		"min_engine_version": [1, 26, 0]
 	},
 	"metadata": {
@@ -15,7 +15,7 @@
 			"description": "Resources",
 			"type": "resources",
 			"uuid": "fac0b30c-16be-4040-be00-fdb001265f4a",
-			"version": [1, 0, 0]
+			"version": [1, 0, 1]
 		}
 	]
 }
